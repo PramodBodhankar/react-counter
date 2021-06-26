@@ -1,0 +1,46 @@
+.counter-input-container
+{
+    .counter-input-wrapper
+    {
+        border: 1px solid #B24242;
+        border-radius: 5px;
+        max-width: max-content;
+        .decrement-button, .increment-button
+        {
+            font-size: 21px;
+            padding: 0px 12px;
+            user-select: none;
+            cursor: pointer;
+            &.disabled
+            {
+                pointer-events: none;
+                background-color: #B24242;
+                color: white;
+            }
+        }
+        .decrement-button
+        {
+            border-right: 1px solid #B24242;
+        }
+        input[type="text"]
+        {
+            max-width: 70px;
+            border: none;
+            text-align: center;
+            color: #B24242;
+            font-size: 21px;
+            border-right: 1px solid #B24242;
+            &:focus
+            {
+                border: 1px solid #B24242;
+                outline: none;
+            }
+        }
+    }
+    .error-lable
+    {
+        padding: 8px 0px;
+        color: red;
+        font-size: 14px;
+    }
+}
